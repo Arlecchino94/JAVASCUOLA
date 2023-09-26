@@ -13,7 +13,7 @@ public class Esercizio7Referendum {
         input = JOptionPane.showInputDialog("Schede bianche o nulle");
         int votiBiancheNulle = Integer.parseInt(input);
         int votanti = votiNO+votiSI+votiBiancheNulle;
-        double votantiPerc = votanti*100/numIscr;
+        double votantiPerc = votanti*100.0/numIscr;
         double  siPercIscritti = votiSI*100.0/numIscr;
         double noPercIscritti = votiNO*100.0/numIscr;
         double siPercVotanti = votiSI*100.0/votanti;
