@@ -9,7 +9,7 @@ public class Esercizio6Incremento {
         input = JOptionPane.showInputDialog("Inserire la popolazione dopo i 2 anni ");
         double pop2 = Double.parseDouble(input);
         double IncrEff = pop2-pop1;
-        double IncrPerc = IncrEff/pop1*100;
+        double IncrPerc = IncrEff*100.0/pop1;
         JOptionPane.showMessageDialog(null, "L'incremento effettivo è: "+IncrEff+"\n"+
                 "La percentuale di incremento è del: "+IncrPerc+"%");
     }
