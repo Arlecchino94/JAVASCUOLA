@@ -2,7 +2,7 @@ package edu.avogadro;
 
 import javax.swing.*;
 
-public class Eserciziio27DivisioneMaggMin {
+public class Esercizio27DivisioneMaggMin {
     public static void main(String[] args) {
         int a = Integer.parseInt(JOptionPane.showInputDialog("Inserire il primo numero"));
         int b = Integer.parseInt(JOptionPane.showInputDialog("Inserire il secondo numero"));
