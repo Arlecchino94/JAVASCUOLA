@@ -17,46 +17,60 @@ public class Esercizio31Quadro {
             min = a;
             max = b;
         }
-        double med;
+        double med1;
         if (c < min) {
-            med = min;
+            med1 = min;
             min = c;
         }else if (c < max) {
-            med = c;
+            med1 = c;
         } else {
-            med = max;
+            med1 = max;
             max = c;
         }
         //d med1 med2 max
-        double med1,med2;
+        double med2;
         if (d < min) {
-            med2 = med;
+            med2 = med1;
             med1 = min;
             min = d;
-        } else if (d < med) {
+        } else if (d < med1) {
             med1 = d;
-            med2 = med;
+            med2 = med1;
         } else if (d < max) {
             med2 = d;
-            med1 = med;
+            med1 = med1;
         }else{
-            med1 = med;
+            med1 = med1;
             med2 = max;
             max = d;
         }
-        double med3;
+        double med3 = 0.0;
          //e med1 med2 med3 max
         //min med1 med2 med3 max
         if (e < min) {
             med3 = med2;
             med2 = med1;
-            med1 = m
+            med1 = min;
+            min = e;
 
             //min e med2 med3 max
         } else if (e < med1) {
-
-
+            med1 = e;
+        } else if (e < med2) {
+            med3 = med2;
+            med2 = e;
+        } else if ( e < med3) {
+            med3 = e;
+        }else if (e < max) {
+            med3 = med2;
+            med2 = med1;
+            med1 = e;
+        } else {
+            med3 = med2;
+            med2 = med1;
+            med1 = max;
+            max = e;
         }
-        JOptionPane.showMessageDialog(null, min + " " + med1 + " " + med2 + " "+ max);
+        JOptionPane.showMessageDialog(null, min + " " + med1 + " " + med2 + " "+ med3 +" "+ max);
     }
 }

@@ -16,6 +16,8 @@ public class Esercizio31Tris {
             min = a;
             max = b;
         }
+        //min med max
+        //c med max
         double med;
         if (c < min) {
             med = min;
@@ -27,6 +29,7 @@ public class Esercizio31Tris {
             max = c;
         }
         //d med1 med2 max
+        //min med1 med2 max
         double med1,med2;
         if (d < min) {
             med2 = med;
