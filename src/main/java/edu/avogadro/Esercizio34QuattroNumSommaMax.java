@@ -27,6 +27,7 @@ public class Esercizio34QuattroNumSommaMax {
             max = d;
         }
         int tot = max1 + max;
+
         JOptionPane.showMessageDialog(null, "La somma dei numeri maggiori è: " +tot);
     }
 }
