@@ -9,7 +9,7 @@ public class Esercizio35ValOrdCresc {
         int c = Integer.parseInt(JOptionPane.showInputDialog("Inserire il primo valore"));
         int d = Integer.parseInt(JOptionPane.showInputDialog("Inserire il primo valore"));
 
-        if (a < b && b < c && c < d) {
+        if (a <= b && b <= c && c <= d) {
             System.out.println("I valori sono in ordine crescente.");
         } else {
             System.out.println("I valori non sono in ordine crescente.");
