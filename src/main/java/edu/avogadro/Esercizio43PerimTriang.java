@@ -7,18 +7,33 @@ public class Esercizio43PerimTriang {
         double a = Double.parseDouble(JOptionPane.showInputDialog("Inserire il valore del lato"));
         double b = Double.parseDouble(JOptionPane.showInputDialog("Inserire il valore del lato"));
         double c = Double.parseDouble(JOptionPane.showInputDialog("Inserire il valore del lato"));
-        String output = "";
-        if (a == b && b == c && c == a){
-            output = "è un triangolo equilatero";
-        }else if (a == b || b == c || c == a) {
-            output = "è un triangolo isoscele";
-        }else {
-            output = "è un triangolo scaleno";
-        }
-        double perimetro = a+b+c;
-        double p = perimetro/2;
-        double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
-        JOptionPane.showMessageDialog(null, "triangolo "+output+"\npreimetro = "+p+"\narea = "+area);
+        double max = a;
 
+        if (b > max) {
+            max = b;
+        }
+        if (c > max) {
+            max = c;
+        }
+        double sommaR = a + b + c - max;
+        String output = "";
+        if (max < sommaR) {
+            if (a == b && b == c) {
+                output = "è un triangolo equilatero";
+            } else if (a == b || b == c || c == a) {
+                output = "è un triangolo isoscele";
+            } else {
+                output = "è un triangolo scaleno";
+            }
+            if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+                output = output + " rettangolo";
+            }
+            double perimetro = a + b + c;
+            double p = perimetro / 2;
+            double area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+            output = "Triangolo " +output + "\npreimetro = "+ perimetro+"\narea = "+area;
+        }else {
+            output = "non è un triangolo";
+        }
     }
 }
