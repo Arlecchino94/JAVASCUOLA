@@ -27,7 +27,7 @@ public class Esercizio31Quadro {
             med1 = max;
             max = c;
         }
-        //d med1 med2 max
+        //d med2 max
         double med2;
         if (d < min) {
             med2 = med1;
