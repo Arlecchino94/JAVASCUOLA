@@ -1,6 +1,5 @@
 package edu.avogadro;
 
-import com.sun.nio.sctp.AbstractNotificationHandler;
 
 import javax.swing.*;
 
