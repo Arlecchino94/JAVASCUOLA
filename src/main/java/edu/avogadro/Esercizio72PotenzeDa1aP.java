@@ -2,7 +2,7 @@ package edu.avogadro;
 
 import javax.swing.*;
 
-public class Esercizio72 {
+public class Esercizio72PotenzeDa1aP {
     public static void main(String[] args) {
         //Calcolare tutte le potenze da 1 a P di un numero N
         String input = JOptionPane.showInputDialog("Inserire potenza");
