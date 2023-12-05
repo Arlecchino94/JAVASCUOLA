@@ -13,23 +13,28 @@ public class MacchinettaMerendine {
         int m10 = 80;
         int m20 = 60;
         int m50 = 50;
+        int A = patatine;
+        int B = caramelle;
+        int C = cioccolato;
+
         String input = JOptionPane.showInputDialog("Scegliere tra: "+"\n"+
-                "1 -  Patatine" + "\n" +
-                "2 -  Caramelle" + "\n" +
-                "3 - Cioccolato");
+                "A -  Patatine" + "\n" +
+                "B -  Caramelle" + "\n" +
+                "C -  Cioccolato");
         int sel = Integer.parseInt(input);
         while (!input.equals("")) {
+            double mon =
 
-        }
 
-        if (patatine == 0) {
-            JOptionPane.showMessageDialog(null, "Non disponibile");
-        }
-        if (caramelle == 0) {
-            JOptionPane.showMessageDialog(null, "Non disponibile");
-        }
-        if (cioccolato == 0) {
-            JOptionPane.showMessageDialog(null, "Non disponibile");
+            if (patatine == 0) {
+                JOptionPane.showMessageDialog(null, "Non disponibile");
+            }
+            if (caramelle == 0) {
+                JOptionPane.showMessageDialog(null, "Non disponibile");
+            }
+            if (cioccolato == 0) {
+                JOptionPane.showMessageDialog(null, "Non disponibile");
+            }
         }
     }
 }
