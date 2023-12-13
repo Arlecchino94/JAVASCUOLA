@@ -42,11 +42,12 @@ public class MacchinettaMerendine {
                 output2 = "Ritirare il cioccolato";
                 JOptionPane.showMessageDialog(null, output);
                 prezzo = cio;
-            }else {
+            }else{
                 output2 = "Scelta non valida";
                 prezzo = 0;
-                JOptionPane.showMessageDialog(null, "Non disponibile");
+
             }
+
             if (prezzo > 0) {
                 int monete10 = Integer.parseInt(JOptionPane.showInputDialog("Inserire monete da 0.10"));
                 int monete20 = Integer.parseInt(JOptionPane.showInputDialog("Inserire monete da 0.20"));
@@ -113,11 +114,15 @@ public class MacchinettaMerendine {
                         "Ti devo ancora: "+restotot +" centesimi" + "\n"+
                         "RITIRA LO SCONTRINO");
             }else {
-                JOptionPane.showMessageDialog(null, "Ritira il resto di: "+ restoout + "\n"+
+                JOptionPane.showMessageDialog(null, "Ritira il resto di: "+ restoout + " centesimi"+ "\n"+
                         "Ritira " + m50usate + " monete da 50 centesimi"+"\n"+
                         "Ritira "+ m20usate + " monete da 20 centesimi" + "\n"+
                         "Ritira "+ m10usate + " monete da 10 centesimi" + "\n");
             }
+            prezzo = 0;
+            restotot = 0;
+            restoout = 0;
+            somma = 0;
             input = JOptionPane.showInputDialog("Vuoi continuare?");
         }
     }
