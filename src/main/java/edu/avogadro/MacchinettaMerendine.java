@@ -124,7 +124,6 @@ public class MacchinettaMerendine {
             restoout = 0;
             somma = 0;
             input = JOptionPane.showInputDialog("Vuoi continuare?");
-
         }
     }
 }
