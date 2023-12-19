@@ -87,7 +87,7 @@ public class MacchinettaMerendine {
             }
             int m20usate = restotot / 20;
             restotot =  restotot % 20;
-            if (m20usate > m20) {
+            if (m20usate < m20) {
                 restino = (m20usate - m20) * 20;
                 m20usate = m20;
                 m20 = 0;
