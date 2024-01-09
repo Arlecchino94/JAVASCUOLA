@@ -16,7 +16,7 @@ public class EsercitazioneTPSI {
         output = "Inizio";
         String input = JOptionPane.showInputDialog("Vuoi iniziare?");
         while (input.equals("si")) {
-            String inputt = JOptionPane.showInputDialog("Il numero è maggiore o minore di: "+media);
+            String inputt = JOptionPane.showInputDialog("Il numero è maggiore o minore di: "+media+"");
             if (inputt.equals("maggiore")) {
                 min = media +1;
                 media = (min+max)/2;
@@ -26,7 +26,7 @@ public class EsercitazioneTPSI {
                 media = (min+max)/2;
             }
             if (inputt.equals("uguale")) {
-                JOptionPane.showMessageDialog(null, "La riposta è:"+media);
+                JOptionPane.showMessageDialog(null, "La riposta è:"+media+"");
                 input  = JOptionPane.showInputDialog("Vuoi ricominciare?");
                 min = 1;
                 max = 1000;
