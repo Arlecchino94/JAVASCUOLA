@@ -1,43 +1,60 @@
 package edu.avogadro;
 
-
-import javax.swing.*;
-
-
+import java.awt.Component;
+import javax.swing.JOptionPane;
 
 public class EsercitazioneTPSI {
-
+    public EsercitazioneTPSI() {
+    }
 
     public static void main(String[] args) {
         int min = 1;
         int max = 1000;
-        int media = (min+max)/2;
+        int media = (min + max) / 2;
+        boolean indovinato = false;
+        boolean gioco = false;
         String output = "";
-        output = "Inizio";
-        String input = JOptionPane.showInputDialog("Vuoi iniziare?");
-        while (input.equals("si")) {
-            String inputt = JOptionPane.showInputDialog("Il numero è maggiore o minore di: "+media+"");
-            if (inputt.equals("maggiore")) {
-                min = media +1;
-                media = (min+max)/2;
-            }
-            if (inputt.equals("minore")) {
-                max = media -1;
-                media = (min+max)/2;
-            }
-            if (inputt.equals("uguale")) {
-                JOptionPane.showMessageDialog(null, "La riposta è:"+media+"");
-                input  = JOptionPane.showInputDialog("Vuoi ricominciare?");
-                min = 1;
-                max = 1000;
-                media = (min+max)/2;
-            }
-            if (media == 0) {
-                JOptionPane.showMessageDialog(null, "Non è un numero tra 1 e 1000");
-                break;
+        JOptionPane.showMessageDialog((Component)null, "Indovinerò un numero tra 1 e 1000");
+        String input = JOptionPane.showInputDialog("vuoi iniziare?");
+        if (input.equals("si")) {
+            gioco = true;
+        }
+
+        while(gioco) {
+            JOptionPane.showMessageDialog((Component)null, "Pensa un numero!");
+
+            while(true) {
+                String inputt = JOptionPane.showInputDialog("Il numero è maggiore o minore di " + media);
+                if (inputt.equals("maggiore")) {
+                    min = media + 1;
+                    media = (min + max) / 2;
+                }
+
+                if (inputt.equals("minore")) {
+                    max = media - 1;
+                    media = (min + max) / 2;
+                }
+
+                if (inputt.equals("uguale")) {
+                    JOptionPane.showMessageDialog((Component)null, "La risposta è: " + media);
+                    min = 1;
+                    max = 1000;
+                    media = (min + max) / 2;
+                    input = JOptionPane.showInputDialog("Vuoi ricominciare?");
+                    break;
+                }
+
+                if (media > 1000) {
+                    output = "Il numero che stai pensando non è tra 1 e 1000 oppure stai cambiando idea di frequente ;D";
+                    break;
+                }
             }
 
-
+            if (input.equals("si")) {
+                gioco = true;
+            } else {
+                gioco = false;
+            }
         }
 
     }
