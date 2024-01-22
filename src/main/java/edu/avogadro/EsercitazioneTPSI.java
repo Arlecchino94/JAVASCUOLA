@@ -24,7 +24,7 @@ public class EsercitazioneTPSI {
             JOptionPane.showMessageDialog((Component)null, "Pensa un numero!");
 
             while(true) {
-                String inputt = JOptionPane.showInputDialog("Il numero è maggiore o minore di " + media);
+                String inputt = JOptionPane.showInputDialog("Il numero è maggiore, minore di " + media);
                 if (inputt.equals("maggiore")) {
                     min = media + 1;
                     media = (min + max) / 2;
