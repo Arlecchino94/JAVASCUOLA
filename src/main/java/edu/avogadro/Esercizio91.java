@@ -7,7 +7,7 @@ public class Esercizio91 {
         // Trovare la radice quadrata di un numero N. Cioè il più grande numero intero K per cui K^2 <= N
 
                 int n = Integer.parseInt(JOptionPane.showInputDialog("Inserisci un numero intero positivo: "));
-                int k = 1;
+                int k = 0;
                 while (k * k <= n) {
                     k++;
                 }

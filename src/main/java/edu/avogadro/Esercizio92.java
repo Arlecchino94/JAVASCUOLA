@@ -7,12 +7,15 @@ public class Esercizio92 {
         int n = Integer.parseInt(JOptionPane.showInputDialog("Inserire un numero"));
         int a = 0;
         int b = 1;
-        for (int i = 1; a < n;i++) {
-            int c = a + b;
-            JOptionPane.showMessageDialog(null, "I numeri sono: " + c);
-
-            a = b;
-            b = c;
+        int c;
+        if (n > a) {
+            JOptionPane.showMessageDialog(null, a);
+            while (n > b) {
+                JOptionPane.showMessageDialog(null, b);
+                c = b;
+                b = a + b;
+                a = c;
+            }
 
         }
     }
