@@ -9,7 +9,7 @@ public class Esercizio100 {
         for (int i = 0; somma < n; i++) {
             somma = somma + i;
         }
-        //ciclo somma triangolare
+        //ciclo somma triangolare per numeri N
         if (somma > n) {
             JOptionPane.showMessageDialog(null, "Il numero non è triangolare");
         }else {
