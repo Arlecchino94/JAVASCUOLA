@@ -1,18 +1,17 @@
 package edu.avogadro;
 
-
 import javax.swing.*;
 
-public class Esercizio101 {
+public class Esercizio106 {
     public static void main(String[] args) {
         int n = Integer.parseInt(JOptionPane.showInputDialog("Inserire un numero"));
         int somma = 0;
-        String output = "";
-        for (int i = 1; i <= n;i++) {
+        int i = 1;
+        for (;somma < n;i++) {
             somma = somma + i;
-            output += " "+somma;
+
         }
-        JOptionPane.showMessageDialog(null, output);
+        JOptionPane.showMessageDialog(null, i);
 
     }
 }
