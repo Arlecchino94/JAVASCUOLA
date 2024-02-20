@@ -2,7 +2,7 @@ package edu.avogadro;
 
 import javax.swing.*;
 
-public class Esercizi109 {
+public class Esercizio109 {
     // Calcolare i primi N numeri Primi
     public static void main(String[] args) {
         int n = Integer.parseInt(JOptionPane.showInputDialog("Inserire quanti numeri primi si vogliono visualizzare"));
