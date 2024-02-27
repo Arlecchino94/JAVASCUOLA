@@ -6,13 +6,11 @@ public class Esercizio123 {
     public static void main(String[] args) {
         //Dato un numero, determinare il numero primo piu vicino
         int n = Integer.parseInt(JOptionPane.showInputDialog("Inserisci un numero"));
-        int div = 0;
-        String output = "";
         int i = n;
         boolean ciclo = true;
         boolean ciclo2 = true;
         while (ciclo) {
-            div = 0;
+            int div = 0;
             for (int j = 1; j <= i; j++) {
                 if (i % j == 0) {
                     div++;
@@ -30,7 +28,7 @@ public class Esercizio123 {
         int magg = i;
         i = n;
         while (ciclo2) {
-            div = 0;
+            int div = 0;
             for (int j = 1; j <= i; j++) {
                 if (i % j == 0) {
                     div++;
