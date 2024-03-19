@@ -24,7 +24,6 @@ public class Esercizio171 {
                 s[j] = salva;
             }
         }
-        System.out.println("valore i = "+i);
         int k = 0;
         for (int j = i; j < n; j++) {
             v[j] = s[k];
