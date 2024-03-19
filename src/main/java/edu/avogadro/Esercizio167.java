@@ -13,14 +13,13 @@ public class Esercizio167 {
             v[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Inserire un numero"));
         }
         for (int i = 0; i < n / 2; i++) {
-            k = v[n-1-i];
-            v[n-1-i] = v[i];
+            k = v[n - 1 - i];
+            v[n - 1 - i] = v[i];
             v[i] = k;
         }
-        for (int i = 0; i < n ; i++) {
+        for (int i = 0; i < n; i++) {
             output += v[i];
         }
         JOptionPane.showMessageDialog(null, output);
     }
-    public static void calcolo ()
 }

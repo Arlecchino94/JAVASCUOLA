@@ -1,16 +1,22 @@
 package edu.avogadro;
 
 import javax.swing.*;
-import java.lang.reflect.Array;
 
 public class Esercizio168 {
     public static void main(String[] args) {
-        int n = Integer.parseInt(JOptionPane.showInputDialog("Inserire lunghezza vettore"));
-        int[] v = new int[n];
-        for (int i = 0; i < n; i++) {
-            v[i] = Integer.parseInt(JOptionPane.showInputDialog("Inserisci un numero"));
-
+        String n = JOptionPane.showInputDialog("Numero da decidere se è palindromo o non è palindromo");
+        boolean palindroma = true;
+        String output ="";
+        for (int i = 0; i < n.length()/2; i++) {
+            if (n.charAt(i)!= n.charAt(n.length()-i-1)){
+                palindroma = false;
+            }
         }
+        if (palindroma){
+            output += n + " è palindroma";
+        }else {
+            output += n + " non è palindroma";
+        }
+        JOptionPane.showMessageDialog(null, output);
     }
-    public static void vettore(
 }
