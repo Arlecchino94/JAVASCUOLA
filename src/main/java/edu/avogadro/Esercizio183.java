@@ -9,7 +9,7 @@ public class Esercizio183 {
         String p = JOptionPane.showInputDialog("Inserire parola da controllare");
         int occ = 0;
         String output = "";
-        for (int i = 0; i < s.length()-p.length()+1; i++) {
+        for (int i = 0; i <= s.length()-p.length(); i++) {
             String s1 = costruisciSottostringa(s,i,p.length());
             if (p.equals(s1)){
                 occ++;
