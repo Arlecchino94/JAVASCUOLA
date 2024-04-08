@@ -9,23 +9,33 @@ public class Verifica1 {
         //B = {1,2,5,3,8}
 
         int n = Integer.parseInt(JOptionPane.showInputDialog("Inserire lunghezza"));
-        int[] v = new int[n];
-        int[] m = new int[v.length];
-        int j = 0;
+        int[] A = new int[n];
+        int[] B = new int[A.length];
         String output = "";
 
         for (int i = 0; i < n; i++) {
-            v[i] = Integer.parseInt(JOptionPane.showInputDialog("Inserire numero"));
+            A[i] = Integer.parseInt(JOptionPane.showInputDialog("Inserire un numero"));
         }
 
-        for (int i = 0; i < n; i++) {
-            while (v[i] != v[i+1]){
-                m[i] = v[i+1];
-                output += m[i]+" ";
-            }
-        }
+        int j = 0;
+
+            for (int i = 0; i < A.length; i++) {
+                    int k = 0;
+                    while (k < j && A[i] != B[k]) {
+                        k++;
+                    }
+                    if (k == j) {
+                        B[j++] = A[i];
+                    }
+                }
+
+                // Stampa l'array B
+                for (int i = 0; i < j; i++) {
+                    output += B[i] + " ";
+                }
         JOptionPane.showMessageDialog(null, output);
-    }
-}
+            }
+
+        }
 
 
