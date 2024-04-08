@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Esercizio180 {
     public static void main(String[] args) {
-        //Data una serie di temperture, calcolare la frequenza negli intervalli <= -10, -9/0 1/10 11/20 21/30 31/40 >= 41
+        //Data una serie di temperature, calcolare la frequenza negli intervalli <= -10, -9/0 1/10 11/20 21/30 31/40 >= 41
         String output = "";
         int n = Integer.parseInt(JOptionPane.showInputDialog("Inserire lunghezza"));
         int[] temp = new int[n];
