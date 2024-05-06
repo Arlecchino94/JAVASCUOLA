@@ -2,7 +2,7 @@ package edu.avogadro;
 
 import javax.swing.*;
 
-public class Esercizio4 {
+public class Matrice4 {
     public static void main(String[] args) {
         //Trova minimo e massimo
         String output = "";
