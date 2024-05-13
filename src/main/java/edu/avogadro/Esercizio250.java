@@ -22,17 +22,22 @@ public class Esercizio250 {
            }
          */
         String output = "";
-        double[] vettore = new double[Integer.parseInt(JOptionPane.showInputDialog("Inserire elementi"))];
-        for (int i = 0; i <vettore.length; i++) {
-            vettore[i] = Double.parseDouble(JOptionPane.showInputDialog("Inserire numero"));
-        }
         int c;
-        int m = Integer.parseInt(JOptionPane.showInputDialog("Ins num righe"));
+        int m = Integer.parseInt(JOptionPane.showInputDialog("Inserisci numero di righe"));
+        double[] vettore = new double[Integer.parseInt(JOptionPane.showInputDialog("Inserire elementi da inserire nel vettore"))];
+
+        for (int i = 0; i <vettore.length; i++) {
+            vettore[i] = i;
+        }
+
+
         if (vettore.length % m == 0){
             c = vettore.length / m;
         }else {
             c = vettore.length / m +1;
         }
+
+
         double[][] matrice = new double[m][c];
         int k = 0;
         for (int i = 0; i < matrice.length; i++) {
