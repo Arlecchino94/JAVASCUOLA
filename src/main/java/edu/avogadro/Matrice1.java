@@ -2,7 +2,7 @@ package edu.avogadro;
 
 import javax.swing.*;
 
-public class Matrici {
+public class Matrice1 {
 
     public static void main(String[] args) {
         String output = "";
