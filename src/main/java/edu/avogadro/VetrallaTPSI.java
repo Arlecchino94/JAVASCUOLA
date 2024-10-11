@@ -13,8 +13,6 @@ public class VetrallaTPSI {
     }
 
 
-
-
     public static int leggiIntero(Scanner leggi) {
 
         while (true) {
