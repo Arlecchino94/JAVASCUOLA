@@ -1,31 +1,31 @@
 package edu.avogadro.Nazario;
 
 public class Veicolo {
-    private String numeroRuote;
-    private String numeroPosti;
+    private int numeroRuote;
+    private int numeroPosti;
     private String marcaProduttrice;
     private String modello;
-    private String dataImmatricolazione;
-    private String potenzaInCvKw;
-    private String cilindrata;
+    private int dataImmatricolazione;
+    private int potenzaInCvKw;
+    private int cilindrata;
     private String tipoMotore;
     private String intestatarioProprietario;
     private String aziendaProprietaria;
     private String targa;
 
-    public String getNumeroRuote() {
+    public int getNumeroRuote() {
         return numeroRuote;
     }
 
-    public void setNumeroRuote(String numeroRuote) {
+    public void setNumeroRuote(int numeroRuote) {
         this.numeroRuote = numeroRuote;
     }
 
-    public String getNumeroPosti() {
+    public int getNumeroPosti() {
         return numeroPosti;
     }
 
-    public void setNumeroPosti(String numeroPosti) {
+    public void setNumeroPosti(int numeroPosti) {
         this.numeroPosti = numeroPosti;
     }
 
@@ -45,27 +45,27 @@ public class Veicolo {
         this.modello = modello;
     }
 
-    public String getDataImmatricolazione() {
+    public int getDataImmatricolazione() {
         return dataImmatricolazione;
     }
 
-    public void setDataImmatricolazione(String dataImmatricolazione) {
+    public void setDataImmatricolazione(int dataImmatricolazione) {
         this.dataImmatricolazione = dataImmatricolazione;
     }
 
-    public String getPotenzaInCvKw() {
+    public int getPotenzaInCvKw() {
         return potenzaInCvKw;
     }
 
-    public void setPotenzaInCvKw(String potenzaInCvKw) {
+    public void setPotenzaInCvKw(int potenzaInCvKw) {
         this.potenzaInCvKw = potenzaInCvKw;
     }
 
-    public String getCilindrata() {
+    public int getCilindrata() {
         return cilindrata;
     }
 
-    public void setCilindrata(String cilindrata) {
+    public void setCilindrata(int cilindrata) {
         this.cilindrata = cilindrata;
     }
 
