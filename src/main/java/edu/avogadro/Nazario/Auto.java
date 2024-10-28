@@ -1,15 +1,40 @@
 package edu.avogadro.Nazario;
 
-import java.util.Scanner;
+public class Auto extends Veicolo {
+    private String numeroPorte;
+    private String livelloSicurezza;
+    private String colore;
+    private String categoriaDiAuto;
 
-public class Auto {
-    private String modello;
-
-    public String getModello() {
-        return modello;
+    public String getNumeroPorte() {
+        return numeroPorte;
     }
 
-    public void setModello(String modello) {
-        this.modello = modello;
+    public void setNumeroPorte(String numeroPorte) {
+        this.numeroPorte = numeroPorte;
+    }
+
+    public String getLivelloSicurezza() {
+        return livelloSicurezza;
+    }
+
+    public void setLivelloSicurezza(String livelloSicurezza) {
+        this.livelloSicurezza = livelloSicurezza;
+    }
+
+    public String getColore() {
+        return colore;
+    }
+
+    public void setColore(String colore) {
+        this.colore = colore;
+    }
+
+    public String getCategoriaDiAuto() {
+        return categoriaDiAuto;
+    }
+
+    public void setCategoriaDiAuto(String categoriaDiAuto) {
+        this.categoriaDiAuto = categoriaDiAuto;
     }
 }
