@@ -1,11 +1,13 @@
 package edu.avogadro.Nazario;
 
+import java.util.Date;
+
 public class Veicolo {
     private int numeroRuote;
     private int numeroPosti;
     private String marcaProduttrice;
     private String modello;
-    private int dataImmatricolazione;
+    private Date dataImmatricolazione;
     private int potenzaInCvKw;
     private int cilindrata;
     private String tipoMotore;
@@ -45,11 +47,11 @@ public class Veicolo {
         this.modello = modello;
     }
 
-    public int getDataImmatricolazione() {
+    public Date getDataImmatricolazione() {
         return dataImmatricolazione;
     }
 
-    public void setDataImmatricolazione(int dataImmatricolazione) {
+    public void setDataImmatricolazione(Date dataImmatricolazione) {
         this.dataImmatricolazione = dataImmatricolazione;
     }
 
