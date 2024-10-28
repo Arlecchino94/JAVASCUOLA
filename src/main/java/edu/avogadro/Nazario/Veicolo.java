@@ -4,6 +4,14 @@ import java.util.Date;
 
 public class Veicolo {
     public final double KW_TO_CV_FACTOR = 1.35962;
+    enum Motorizzazione{
+        ELETTRICO,
+        IBRIDO_BENZINA,
+        IBRIDO_DIESEL,
+        BENZINA,
+        DIESEL,
+        BENZINA_GPL
+    }
     private int numeroRuote;
     private int numeroPosti;
     private String marcaProduttrice;
@@ -11,7 +19,7 @@ public class Veicolo {
     private Date dataImmatricolazione;
     private int potenzaKW;
     private int cilindrata;
-    private String tipoMotore;
+    private Motorizzazione tipoMotore;
     private String intestatarioProprietario;
     private String aziendaProprietaria;
     private String targa;
@@ -75,12 +83,12 @@ public class Veicolo {
         this.cilindrata = cilindrata;
     }
 
-    public String getTipoMotore() {
+    public Motorizzazione getTipoMotore() {
         return tipoMotore;
     }
 
     public void setTipoMotore(String tipoMotore) {
-        this.tipoMotore = tipoMotore;
+        this.tipoMotore = Motorizzazione.valueOf(tipoMotore);
     }
 
     public String getIntestatarioProprietario() {
