@@ -3,17 +3,20 @@ package edu.avogadro.Nazario;
 import java.util.Date;
 
 public class Veicolo {
+    public final double KW_TO_CV_FACTOR = 1.35962;
     private int numeroRuote;
     private int numeroPosti;
     private String marcaProduttrice;
     private String modello;
     private Date dataImmatricolazione;
-    private int potenzaInCvKw;
+    private int potenzaKW;
     private int cilindrata;
     private String tipoMotore;
     private String intestatarioProprietario;
     private String aziendaProprietaria;
     private String targa;
+
+
 
     public int getNumeroRuote() {
         return numeroRuote;
@@ -55,12 +58,12 @@ public class Veicolo {
         this.dataImmatricolazione = dataImmatricolazione;
     }
 
-    public int getPotenzaInCvKw() {
-        return potenzaInCvKw;
+    public long getPotenzaCV() {
+        return Math.round(potenzaKW * KW_TO_CV_FACTOR);
     }
 
-    public void setPotenzaInCvKw(int potenzaInCvKw) {
-        this.potenzaInCvKw = potenzaInCvKw;
+    public void setPotenzaKW(int potenzaKW) {
+        this.potenzaKW = potenzaKW;
     }
 
     public int getCilindrata() {
