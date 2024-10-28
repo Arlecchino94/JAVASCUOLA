@@ -18,6 +18,7 @@ public class Veicolo {
 
 
 
+
     public int getNumeroRuote() {
         return numeroRuote;
     }
